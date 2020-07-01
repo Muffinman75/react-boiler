@@ -4,8 +4,44 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start:dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "jest --runInBand"
   },
   "author": "Manoj Modhwadia",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.9",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
+    "axios": "^0.19.2",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "serve-favicon": "^2.5.0"
+  }
 }
