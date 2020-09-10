@@ -3,16 +3,22 @@ import "@babel/polyfill";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {hot} from "react-hot-loader";
 
+
+import Nav from '../Nav/index.jsx';
 import Home from '../Home/index.jsx';
 import Login from '../Login/index.jsx';
+import About from '../../Pages/About/index.jsx';
+import history from '../../services/history';
 
 function App() {
     return (
-        <Router>
+        <Router history={history}>
+            <Nav/>
             <Switch>
-                <Route exact path="/" component={Login} />
-                <Route path="/Home" component={Home}/>
+                <Route path="/home" component={Home}/>
+                <Route path="/about" component={About}/>
             </Switch>
+            <Route exact path="/" component={Login} />
         </Router>
     );
 }

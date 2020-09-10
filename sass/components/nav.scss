@@ -1,0 +1,25 @@
+@import '../base/variables.scss';
+
+.navbar-container {
+    height: 50px;
+    background-color: $primary-colour;
+    padding: 15px;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        margin-right: 30px;
+        
+        .nav-link {
+            color: $input-background-color;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 15px;
+            
+        }
+
+    }
+
+}
